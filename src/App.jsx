@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Header from "./Components/Header";
 import SideBar from "./Components/SideBar";
 import EditProduct from "./Pages/EditProduct";
 import AddProduct from "./Pages/AddProduct";
