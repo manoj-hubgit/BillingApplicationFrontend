@@ -20,6 +20,7 @@ const handleSubmit=async (e)=>{
     const value=response.data.message;
     dispatch(signInSuccess(value))
     localStorage.setItem("token",response.data.token);
+    localStorage.setItem("storeName",response.data.storeName);
      navigate('/');
     console.log(value);
     
@@ -35,7 +36,6 @@ const handleSubmit=async (e)=>{
     
     <div className="min-h-screen flex mx-auto ">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 p-5">
-        
        
         <div className="flex-1 md:text-left text-center">
           <h1 className="text-4xl font-bold">BillHub</h1>
