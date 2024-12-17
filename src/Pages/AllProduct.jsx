@@ -48,7 +48,7 @@ const AllProduct = () => {
         return;
       }
       const response = await axios.post(
-        "http://localhost:5000/api/bill/generateBill",
+        "https://billhub.onrender.com/api/bill/generateBill",
         { products: productDetails },
         {
           headers: {
@@ -143,7 +143,7 @@ const AllProduct = () => {
     }
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/product/allProducts?search=${searchTerm}`,
+        `https://billhub.onrender.com/api/product/allProducts?search=${searchTerm}`,
         {
           headers: {
             Authorization: token,

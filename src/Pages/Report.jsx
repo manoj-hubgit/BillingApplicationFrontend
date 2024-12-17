@@ -12,7 +12,7 @@ const BillsReport = () => {
             try {
                 const token = localStorage.getItem("token");
                 setLoading(true);
-                const response = await axios.get("http://localhost:5000/api/bill/getBillData", {
+                const response = await axios.get("https://billhub.onrender.com/api/bill/getBillData", {
                     headers: {
                         Authorization: token,
                     },

@@ -16,7 +16,7 @@ const Signup = () => {
         e.preventDefault();
         try {
             setLoading(true);
-            await axios.post("http://localhost:5000/api/auth/register", formData);
+            await axios.post("https://billhub.onrender.com/api/auth/register", formData);
             navigate('/signin');
         } catch (error) {
             console.error(error);

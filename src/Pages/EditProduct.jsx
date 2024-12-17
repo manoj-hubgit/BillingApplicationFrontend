@@ -36,7 +36,7 @@ const EditProduct = () => {
     }
 
     try {
-      const response = await axios.get("http://localhost:5000/api/product/allProducts", {
+      const response = await axios.get("https://billhub.onrender.com/api/product/allProducts", {
         headers: {
           Authorization: token,
         },
@@ -72,7 +72,7 @@ const handleDelete=async(productId)=>{
     return;
   }
   try {
-    await axios.delete(`http://localhost:5000/api/product/deleteProduct/${productId}`,{
+    await axios.delete(`https://billhub.onrender.com/api/product/deleteProduct/${productId}`,{
       headers:{
         Authorization:token,
       }
@@ -90,7 +90,7 @@ const handleUpdate = async ()=>{
     return;
   }
  try {
-  await axios.put(`http://localhost:5000/api/product/updateProduct/${editingProduct}`,
+  await axios.put(`https://billhub.onrender.com/api/product/updateProduct/${editingProduct}`,
     formData,{
       headers:{
         Authorization:token,

@@ -24,7 +24,7 @@ const Settings = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/product/profile",
+        "https://billhub.onrender.com/api/product/profile",
         {
           headers: {
             Authorization: token,
@@ -53,7 +53,7 @@ const Settings = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.put(
-        "http://localhost:5000/api/product/updateAccount",
+        "https://billhub.onrender.com/api/product/updateAccount",
         formData,
         {
           headers: { Authorization: token },
@@ -77,7 +77,7 @@ const Settings = () => {
     }
     try {
       const response = await axios.delete(
-        "http://localhost:5000/api/product/deleteAccount",
+        "https://billhub.onrender.com/api/product/deleteAccount",
         {
           headers: {
             Authorization: token,
