@@ -1,8 +1,21 @@
-# React + Vite
+Billing Website - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Overview
 
-Currently, two official plugins are available:
+This is the frontend for the Billing Website, a MERN stack application designed for efficient billing and product management. 
+The frontend is built using React and Redux for state management, with Bootstrap for styling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features
+User authentication (Sign up, Login, Logout)
+Dashboard for managing products and sales
+Add, edit, and delete products
+Generate billing reports
+User-friendly UI with responsive design
+
+Tech Stack
+React.js
+Redux Toolkit
+Bootstrap
+Axios (for API requests)
+React Router (for navigation)
+
